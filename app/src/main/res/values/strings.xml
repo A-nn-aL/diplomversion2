@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Block Ciphers</string>
+    <string name="ciphers">Шифри</string>
+    <string name="open_nav">Open Nav Dr</string>
+    <string name="close_nav">Close Nav Dr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="large_text">
+        jjjjjjjj
+    </string>
+    <string name="title_activity_encrypt">EncryptActivity</string>
+    <string name="action_settings">Налаштування</string>
+
+</resources>

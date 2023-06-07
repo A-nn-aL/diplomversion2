@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Diplomversin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorPrimaryVariant">@color/brown_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Diplomversin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- set window action bar -->
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowTitleSize">35dp</item>
+
+        <!-- set color of title text -->
+        <item name="android:textColorPrimary">@color/green_dark</item>
+
+        <!-- set background color of action bar -->
+        <item name="android:background">@color/white</item>
+
+        <!-- set color of status bar -->
+        <item name="android:statusBarColor">@color/green_dark</item>
+
+        <!-- set colorPrimary and colorPrimaryVariant to white if you want them to be white -->
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+
+        <!-- set secondary colors and their variants -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- set colorOnPrimary to white if you want it to be white -->
+        <item name="colorOnPrimary">@color/green_dark</item>
+    </style>
+
+</resources>

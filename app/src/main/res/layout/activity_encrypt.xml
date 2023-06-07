@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    tools:context=".second_fragments.EncryptActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:id="@+id/toolbar_image"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:id="@+id/toolbar_text"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+
+            android:text="Повідомлення:" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_baseline_attach_file_24" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/message_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/encrypt"
+        android:hint="Enter Message"
+        android:padding="8dp" />
+
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/bits_checkbox"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="left"-->
+    <!--        android:checkedButton="@id/key_size128"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/key_size128"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:text="128 bits" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/key_size192"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:text="192 bits" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/key_size256"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:text="256 bits" />-->
+    <!--    </RadioGroup>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Ключ:" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/count_bytes"
+            android:hint="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/128"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/encrypt"
+        android:hint="Enter Key"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/green_dark"
+            android:text="Зашифрувати"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btn_decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/green_dark"
+            android:text="Розшифрувати"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/encrypt"
+        android:hint="Result"
+        android:padding="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textIsSelectable="true"
+        android:textSize="16dp" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/message_decrypt"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="15dp"-->
+    <!--        android:hint="Enter message to decrypt" />-->
+
+
+</LinearLayout>

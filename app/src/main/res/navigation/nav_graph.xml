@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ciphersFragment">
+
+    <fragment
+        android:id="@+id/ciphersFragment"
+        android:name="com.example.diplomversin.nav_fragments.CiphersFragment"
+        android:label="fragment_ciphers"
+        tools:layout="@layout/fragment_ciphers" >
+        <action
+            android:id="@+id/action_ciphersFragment_to_encryptActivity"
+            app:destination="@id/encryptActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/encryptActivity"
+        android:name="com.example.diplomversin.second_fragments.EncryptActivity"
+        android:label="content_scrolling"
+        tools:layout="@layout/activity_encrypt" />
+
+</navigation>
